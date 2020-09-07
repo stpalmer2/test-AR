@@ -11,7 +11,6 @@
 		
 		<a-assets>
 			<audio id="sound" src="https://raw.githubusercontent.com/stpalmer2/hello_world/gh-pages/audio.mp3" preload="auto"></audio>
-			<audio id="sound2" src="https://raw.githubusercontent.com/stpalmer2/hello_world/gh-pages/audio.mp3" preload="auto"></audio>
         </a-assets>
 		
 		<!-- handle unknown marker -->
@@ -28,9 +27,6 @@
 					soundhandler ></a-sphere>
 			<!--</a-box> -->
 	</a-marker>
-	<a-entity sound="src: #sound" autoplay="false"></a-entity>
-	<a-entity camera></a-entity>
-
 
 		<!-- handle matrix marker -->
 		<a-marker type='barcode' value='5'>
@@ -47,6 +43,7 @@
 			animation="property: rotation; to:0 0 360; dur: 25000; easing: linear; loop: true">
 		</a-sphere>
 		</a-marker>
+			<a-entity sound="src: #sound" autoplay="false"></a-entity>
 		<a-entity camera></a-entity>
 		
 
